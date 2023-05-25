@@ -98,8 +98,8 @@ body {
 
 .button:hover {
     color: #A3AB78;
-    background-color: #506266;
-    border: var(--gray-neutral-bg);
+    background-color: #54822B;
+    border: var(--bg);
     border-radius: 10px;
     opacity: 0.3;
 }
