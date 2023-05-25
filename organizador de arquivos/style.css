@@ -1,9 +1,9 @@
 :root {
-    --gray-bg: #10454F;
-    --gray-neutral-bg: #506266;
-    --gray-light-bg: #818274;
-    --card-bg: #A3AB78;
-    --card-lime-bg: #BDE038;
+    --bg: #54822B;
+    --neutral-bg: rgb(156, 193, 123);
+    --light-bg: #74B43C;
+    --card-bg: #2B3622;
+    --cardtwo-bg: #223612;
 }
 
 body {
@@ -11,14 +11,19 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
-    background: var(--card-bg);
+    background-color: var(--card-bg);
+    background-image: url(images/pngwing.com.png);
+    filter: hue-rotate();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     font-family: 'Fraunces', serif;
     font-size: 18px;
 }
 
 .container {
-    background: linear-gradient(to bottom,  #0d0d0e, #28282e, #554343);
-    border: 1px solid linear-gradient(to bottom, #A3AB78, #BDE038);
+    background: var(--neutral-bg);
+    border: 1px solid var(--neutral-bg);
     border-radius: 20px;
     padding: 3rem;
 }
@@ -65,18 +70,18 @@ body {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: var(--card-bg);
+    color: #000000;
 }
 
 .par {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;
-    color: var(--gray-light-bg);
+    color: #000000;
 }
 
 .button {
-    color: var(--card-lime-bg);
+    color: var(--neutral-bg);
     cursor: pointer;
     padding: 15px;
     padding-left: 80px;
@@ -86,9 +91,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 500;
-    border: 1px solid var(--gray-bg);
+    border: 1px solid var(--card-bg);
     border-radius: 10px;
-    background-color: var(--gray-bg);
+    background-color: var(--card-bg);
     transition: opacity 0.3s ease;
 }
 
